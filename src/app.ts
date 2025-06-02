@@ -21,7 +21,7 @@ app.get("/health", (req: Request, res: Response) => {
   res.status(200).send("OK");
 });
 app.get("/", (req: Request, res: Response) => {
-  res.send("Listing Tracker API is running!");
+  res.send("API is running!");
 });
 
 // Basic Error Handler
