@@ -1,4 +1,4 @@
-import { Document } from 'mongoose';
+import { Document } from "mongoose";
 
 export interface IGem extends Document {
   contractAddress: string;
@@ -9,6 +9,7 @@ export interface IGem extends Document {
   creatorAddress: string;
   networkChainId: string;
   transactionHash: string;
+  imageUrl?: string;
   createdAt?: Date;
   updatedAt?: Date;
 }
@@ -22,4 +23,5 @@ export interface CreateGemDto {
   creatorAddress: string;
   networkChainId: string;
   transactionHash: string;
+  imageUrl?: string;
 }

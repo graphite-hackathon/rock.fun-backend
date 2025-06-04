@@ -47,6 +47,10 @@ const GemSchema = new Schema<IGem>(
       unique: true,
       trim: true,
     },
+    imageUrl: {
+      type: String,
+      required: false,
+    },
   },
   {
     timestamps: true,
